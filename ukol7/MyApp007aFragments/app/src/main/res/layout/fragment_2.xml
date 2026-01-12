@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#E0F7FA"
+    tools:context=".Fragment2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🥤 MENU - NÁPOJE"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#006064"
+        android:layout_marginBottom="30dp"/>
+
+    <CheckBox
+        android:id="@+id/cbKola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🥤 Coca Cola 0,5l - 40 Kč"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cbLimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🍋 Domácí limonáda - 35 Kč"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cbPivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🍺 Pivo točené 0,5l - 50 Kč"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cbVino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🍷 Víno bílé/červené 0,2l - 60 Kč"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnObjednatNapoje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OBJEDNAT NÁPOJE"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#00ACC1"/>
+
+</LinearLayout>

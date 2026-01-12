@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFF8DC"
+    tools:context=".Fragment1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🍕 MENU - JÍDLA"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#D2691E"
+        android:layout_marginBottom="30dp"/>
+
+    <CheckBox
+        android:id="@+id/cbPizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🍕 Pizza Margherita - 150 Kč"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cbBurger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🍔 Burger s hranolky - 120 Kč"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cbPasta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🍝 Pasta Carbonara - 130 Kč"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cbSalat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🥗 Kuřecí salát - 110 Kč"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnObjednat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OBJEDNAT JÍDLO"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF6347"/>
+
+</LinearLayout>

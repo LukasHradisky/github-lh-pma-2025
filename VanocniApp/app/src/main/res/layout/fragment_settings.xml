@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFF5F5"> <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nastavení koledníka"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="#B00020" /> <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:text="Zadej své jméno:"
+    android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Např. Ježíšek"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonSaveUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2E7D32"
+        android:text="Uložit nastavení"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Změny se ihned projeví na domovské obrazovce díky DataStore Flow."
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textColor="#666666" />
+
+</LinearLayout>

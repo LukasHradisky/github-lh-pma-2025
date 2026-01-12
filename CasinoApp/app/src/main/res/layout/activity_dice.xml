@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B5E20"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarDice"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1B5E20"
+        app:navigationIcon="@android:drawable/ic_menu_revert"
+        app:title="Kostky"
+        app:titleTextColor="#FFD700" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvDiceBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Konto: 0 Kč"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pravidla: 7 nebo 11 = VÝHRA (2x)\n2, 3 nebo 12 = PROHRA"
+            android:textColor="#E0E0E0"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <EditText
+            android:id="@+id/etDiceBet"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Sázka (Kč)"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#CCCCCC"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnRollDice"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="HODIT KOSTKAMI"
+            android:backgroundTint="#FF9800"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/tvDice1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="?"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/tvDice2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="?"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDiceSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="#FFD700"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDiceResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

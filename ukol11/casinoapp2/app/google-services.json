@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "30751467576",
+    "project_id": "casinoapp-4da7b",
+    "storage_bucket": "casinoapp-4da7b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30751467576:android:ebfb65cb49f6421a9e1ecd",
+        "android_client_info": {
+          "package_name": "com.example.casinoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9ZhZxLkHFhACG7XbMUPj7kK-mo-G2504"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
