@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvQuestionNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Otázka 1/10"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏱️ 30 s"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skóre: 0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Kategorie a obtížnost -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📚 Kotlin"
+                android:textSize="14sp"
+                android:layout_marginEnd="16dp"
+                android:padding="4dp"
+                android:background="#E3F2FD"
+                android:textColor="#1976D2"/>
+
+            <TextView
+                android:id="@+id/tvDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐ Lehká"
+                android:textSize="14sp"
+                android:padding="4dp"
+                android:background="#FFF3E0"
+                android:textColor="#F57C00"/>
+        </LinearLayout>
+
+        <!-- Otázka -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/tvQuestionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tady bude otázka..."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:minHeight="100dp"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Odpovědi -->
+        <Button
+            android:id="@+id/btnOptionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A: Odpověď A"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="#000000"
+            android:gravity="start|center_vertical"/>
+
+        <Button
+            android:id="@+id/btnOptionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B: Odpověď B"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="#000000"
+            android:gravity="start|center_vertical"/>
+
+        <Button
+            android:id="@+id/btnOptionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C: Odpověď C"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="#000000"
+            android:gravity="start|center_vertical"/>
+
+        <Button
+            android:id="@+id/btnOptionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D: Odpověď D"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="#000000"
+            android:gravity="start|center_vertical"/>
+
+        <!-- Feedback -->
+        <TextView
+            android:id="@+id/tvFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback..."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Tlačítko ukončit -->
+        <Button
+            android:id="@+id/btnQuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ukončit kvíz"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:backgroundTint="#757575"/>
+
+    </LinearLayout>
+</ScrollView>
